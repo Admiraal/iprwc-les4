@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-
 import { Product } from '../product.model';
+
 
 
 @Component({
@@ -9,6 +9,8 @@ import { Product } from '../product.model';
   styleUrls: ['./product-thumbnail.component.scss']
 })
 export class ProductThumbnailComponent implements OnInit {
+
+  public boudewijn: Product;
 
   @Input() public index: number;
   @Input() public product: Product;
